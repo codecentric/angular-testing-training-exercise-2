@@ -1,18 +1,13 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { SearchfieldComponent } from './searchfield.component';
-import { selectElementByDataId } from '../../../test';
 import { SubmitbuttonComponent } from '../submitbutton/submitbutton.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { DebugElement } from '@angular/core';
 
 function typeInto(inputElement: DebugElement, value: string) {
   inputElement.nativeElement.value = value;
-  inputElement.triggerEventHandler('input', {
-    target: {
-      value,
-    },
-  });
+  inputElement.nativeElement.dispatchEvent(new Event('input'));
 }
 
 describe('SearchfieldComponent', () => {
