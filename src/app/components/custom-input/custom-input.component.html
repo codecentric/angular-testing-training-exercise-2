@@ -1,0 +1,8 @@
+<label for="our-custom-input">Input some text</label>
+<input
+  id="our-custom-input"
+  type="text"
+  data-testid="custom-input"
+  [formControl]="inputvalue"
+  (input)="inputOccured()"
+/>

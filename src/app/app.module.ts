@@ -6,9 +6,10 @@ import { SubmitbuttonComponent } from './components/submitbutton/submitbutton.co
 import { SearchfieldComponent } from './components/searchfield/searchfield.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { CustomInputComponent } from './components/custom-input/custom-input.component';
 
 @NgModule({
-  declarations: [AppComponent, SubmitbuttonComponent, SearchfieldComponent],
+  declarations: [AppComponent, SubmitbuttonComponent, SearchfieldComponent, CustomInputComponent],
   imports: [BrowserModule, ReactiveFormsModule, HttpClientModule],
   providers: [],
   bootstrap: [AppComponent],
